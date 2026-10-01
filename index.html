@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link
+      rel="stylesheet"
+      href="index.css" />
+  </head>
+  <body>
+    <h1>Home Page</h1>
+    <nav>
+      <a href="pages/Storybook/StoryBook.html">Home</a> |
+      <a href="pages/confirm/confirm.html">Confirm</a> |
+      <a href="pages/Enter-Info/Enter-info.html">Enter info</a> |
+      <a href="pages/Admin-Panel/Admin-Panel.html">Admin Panel</a> |
+      <a href="pages/Choose-hairstyle/Choose-hairstyle.html"
+        >Choose hairstyle</a
+      >
+      |
+
+      <a href="pages/uploade-pic/uploade-pic.html">uploade pic</a> |
+      <a href="pages/loading-page/loading-page.html">loading page </a> |
+      <a href="pages/Choose-Charactor/Chose-Charactor.html"
+        >Choose Charactor
+      </a>
+      | <a href="pages/All-set/All-Set.html">All Set </a> |
+    </nav>
+    <p>Welcome to the navigation page of this project.</p>
+    <button id="clickBtn">Click Me</button>
+
+    <script>
+      document.getElementById("clickBtn").addEventListener("click", () => {
+        alert(
+          "Hello from Home Page! please click on the pages given, to see the design "
+        );
+      });
+    </script>
+  </body>
+</html>

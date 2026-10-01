@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <title>Secure Photo Upload</title>
+    <link
+      rel="stylesheet"
+      href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="title">📸 Secure Photo Upload</div>
+
+      <ul class="instructions">
+        <li>Face should be clearly visible (no smudges or shadows)</li>
+        <li>Front-facing, like a passport photo – but cuter!</li>
+        <li>No filters, sunglasses, or hands covering the face</li>
+        <li>Neutral or gentle smile works best</li>
+      </ul>
+
+      <div class="example-section">
+        <div class="example">
+          <img
+            src="../../images/bad-image.png"
+            alt="Bad Example" />
+          <div class="bad">Bad Example</div>
+        </div>
+        <div class="example">
+          <img
+            src="../../images/good-image.png"
+            alt="Good Example" />
+          <div class="good">Good Example</div>
+        </div>
+      </div>
+
+      <input
+        type="file"
+        id="photoInput"
+        accept="image/*" />
+      <div id="previewContainer"></div>
+
+      <button class="submit-btn">Submit</button>
+
+      <div class="footer-note">
+        🔒 Your photo is safe! It’s just for your one-of-a-kind book.
+      </div>
+    </div>
+
+    <!-- Toasts -->
+    <div class="toast-container"></div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

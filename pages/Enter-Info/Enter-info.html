@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <title>Child Info Form</title>
+    <link
+      rel="stylesheet"
+      href="style.css" />
+  </head>
+  <body>
+    <div class="form-card">
+      <h2>✨ Please enter child's info ✨</h2>
+
+      <div class="form-group">
+        <label>Child’s Name</label>
+        <input
+          id="childName"
+          type="text"
+          placeholder="Enter name" />
+      </div>
+
+      <div class="form-group">
+        <label>Gender</label>
+        <div
+          class="options"
+          data-group="gender">
+          <button class="option-btn">👦 Boy</button>
+          <button class="option-btn">👧 Girl</button>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Skin tone</label>
+        <div
+          class="options"
+          data-group="skin">
+          <button class="option-btn">🌸 Fair</button>
+          <button class="option-btn">🍂 Olive</button>
+          <button class="option-btn">🌞 Brown</button>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Age</label>
+        <div
+          class="options"
+          data-group="age">
+          <button class="option-btn">1–2 yrs</button>
+          <button class="option-btn">3–6 yrs</button>
+        </div>
+      </div>
+
+      <button
+        class="btn-submit"
+        id="submitBtn">
+        ✨ Submit ✨
+      </button>
+    </div>
+
+    <!-- Toast -->
+    <div id="toast"></div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

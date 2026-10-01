@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <title>Kids Personalized Storybook</title>
+    <!-- CSS -->
+    <link
+      rel="stylesheet"
+      href="style.css" />
+  </head>
+  <body>
+    <div class="storybook-container">
+      <h2>Kids Personalized Storybook</h2>
+      <div class="name-age">
+        <div class="name">
+          <label>Child’s Name</label>
+          <input
+            type="text"
+            placeholder="Sophie"
+            value="Sophie" />
+        </div>
+        <div class="age">
+          <label>Age</label>
+          <select>
+            <option>7</option>
+            <option>6</option>
+            <option>8</option>
+            <option>9</option>
+          </select>
+        </div>
+      </div>
+
+      <label>Avatar Picker</label>
+      <div class="avatar-options">
+        <div class="avatar">
+          <img
+            src="https://i.ibb.co/rfsy7Vm/avatar1.png"
+            alt="avatar1" />
+        </div>
+        <div class="avatar">
+          <img
+            src="https://i.ibb.co/6Zz4T0W/avatar2.png"
+            alt="avatar2" />
+        </div>
+        <div class="avatar">
+          <img
+            src="https://i.ibb.co/G5LbLLx/avatar3.png"
+            alt="avatar3" />
+        </div>
+        <div class="avatar">
+          <img
+            src="https://i.ibb.co/YbG7psS/avatar4.png"
+            alt="avatar4" />
+        </div>
+      </div>
+
+      <label>Color Picker</label>
+      <div class="color-options">
+        <div
+          class="color-circle selected"
+          style="background: #333"></div>
+        <div
+          class="color-circle"
+          style="background: #cce6ff"></div>
+        <div
+          class="color-circle"
+          style="background: #d4fcd4"></div>
+        <div
+          class="color-circle"
+          style="background: #ffe699"></div>
+      </div>
+
+      <label>Theme / Color Scheme</label>
+      <div class="theme-options">
+        <button class="theme-btn active">🚀 Adventure</button>
+        <button class="theme-btn">🌙 Bedtime</button>
+        <button class="theme-btn">🐻 Animal Friends</button>
+      </div>
+
+      <label>Story Type</label>
+      <input
+        type="text"
+        value="With love from Mommy & Daddy" />
+
+      <label>Custom Dedication <small>(Max 200 chars)</small></label>
+      <textarea rows="2">With love from Mommy & Daddy</textarea>
+
+      <button class="btn-submit">✨ Create My Storybook</button>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+  </body>
+</html>

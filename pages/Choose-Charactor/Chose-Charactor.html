@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <title>Choose Character</title>
+    <link
+      rel="stylesheet"
+      href="style.css" />
+  </head>
+  <body>
+    <h1>🧚‍♀️ Please choose your character</h1>
+
+    <div class="character-grid">
+      <div
+        class="character selected"
+        data-name="Option 1">
+        <img
+          src="../../images/cartoon-baby-boy.png"
+          alt="Option 1" />
+        <label>Option 1</label>
+      </div>
+      <div
+        class="character"
+        data-name="Option 2">
+        <img
+          src="../../images/cartoon-baby-girl.png"
+          alt="Option 2" />
+        <label>Option 2</label>
+      </div>
+      <div
+        class="character"
+        data-name="Option 3">
+        <img
+          src="../../images/cartoon-boy.png"
+          alt="Option 3" />
+        <label>Option 3</label>
+      </div>
+    </div>
+
+    <div class="actions">
+      <button class="btn btn-alt">📷 I'd like to use another photo</button>
+      <button
+        id="submitBtn"
+        class="btn btn-submit"
+        disabled>
+        ✨ Submit
+      </button>
+      <button class="btn btn-alt">🎨 I'd like to change hair</button>
+    </div>
+
+    <!-- Sparkles container -->
+    <div id="sparkles"></div>
+    <!-- Toast container -->
+    <div id="toast-container"></div>
+    <script src="js/script.js"></script>
+  </body>
+</html>

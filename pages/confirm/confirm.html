@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <title>Please Confirm</title>
+    <link
+      rel="stylesheet"
+      href="style.css" />
+  </head>
+  <body>
+    <div class="confirm-card">
+      <div class="icon">📋</div>
+      <h2>Please confirm:</h2>
+      <div class="order-details">
+        <strong>Order #993388</strong><br />
+        John Doe<br />
+        <span id="address-text">123 Main St, City, State 12345</span>
+      </div>
+      <div class="btn-container">
+        <button class="btn btn-confirm">Yes, all good</button>
+        <button class="btn btn-edit">Edit address</button>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div
+      class="modal"
+      id="editModal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h3>Update shipping address</h3>
+        <label for="newAddress">Shipping address</label>
+        <textarea
+          id="newAddress"
+          rows="3">
+123 Main St, City, State 12345</textarea
+        >
+        <div class="modal-actions">
+          <button class="btn btn-cancel">Cancel</button>
+          <button class="btn btn-save">Save</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Toast container -->
+    <div id="toast-container"></div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
